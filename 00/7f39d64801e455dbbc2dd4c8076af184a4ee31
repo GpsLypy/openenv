@@ -1,0 +1,21 @@
+openspec/changes/add-macos-dmg-release/tasks.md
+  s_b0d29bfbf7e1bf::t_62626f1a937dda 8-9
+openspec/changes/add-macos-dmg-release/verification.md
+  s_b0d29bfbf7e1bf::t_62626f1a937dda 20-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "007f39d64801e455dbbc2dd4c8076af184a4ee31",
+  "prompts": {},
+  "sessions": {
+    "s_b0d29bfbf7e1bf": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a16284-9708-7d41-ac48-5d2f8f8d05c1",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "yupeng.li <yupeng.li@ly.com>"
+    }
+  }
+}
