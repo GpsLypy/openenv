@@ -1,0 +1,122 @@
+.gitignore
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-6
+  s_b0d29bfbf7e1bf::t_15d3074e34fb68 7-11
+electron/main.cjs
+  s_b0d29bfbf7e1bf::t_223b1375f7940e 1-33,38-68,72-160
+  s_b0d29bfbf7e1bf::t_e7ac867a325de6 34-37,69-71
+scripts/dmg-mac.mjs
+  s_b0d29bfbf7e1bf::t_87e336a1663056 1-22
+tests/inventory.test.mjs
+  s_b0d29bfbf7e1bf::t_65a6b26899b519 25-34,116-140
+  s_b0d29bfbf7e1bf::t_009db5850cc226 1-24,35-115,141-157
+CHANGELOG.md
+  s_b0d29bfbf7e1bf::t_87e336a1663056 1-14
+openspec/changes/add-environment-inventory/proposal.md
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-21
+scripts/icons.mjs
+  s_b0d29bfbf7e1bf::t_223b1375f7940e 1-31,39-42,54-55
+  s_b0d29bfbf7e1bf::t_7392ca9c374cc8 32-38,43-44,53
+  s_b0d29bfbf7e1bf::t_4d42f1d0c36638 45-52
+tsconfig.json
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-9
+src/main.tsx
+  s_b0d29bfbf7e1bf::t_2683e77792e07e 1-5
+openspec/changes/add-macos-dmg-release/verification.md
+  s_b0d29bfbf7e1bf::t_db84c0cdf99d05 1-20
+src/styles.css
+  s_b0d29bfbf7e1bf::t_1f2ee8cdc99aff 1-9
+  s_b0d29bfbf7e1bf::t_79e814631030b7 10-16,24-30
+  s_b0d29bfbf7e1bf::t_e7ac867a325de6 17-23
+openspec/changes/add-macos-dmg-release/proposal.md
+  s_b0d29bfbf7e1bf::t_9dc274a7238e2e 1-19
+vite.config.ts
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-7
+openspec/changes/add-macos-dmg-release/tasks.md
+  s_b0d29bfbf7e1bf::t_9dc274a7238e2e 1-2,4-6,8-9
+  s_b0d29bfbf7e1bf::t_db84c0cdf99d05 3,7
+openspec/changes/add-environment-inventory/specs/desktop-lifecycle/spec.md
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-22
+src/types.ts
+  s_b0d29bfbf7e1bf::t_2683e77792e07e 1-4,6-21,23-35
+  s_b0d29bfbf7e1bf::t_7392ca9c374cc8 22
+  s_b0d29bfbf7e1bf::t_e6729e80ac58ff 5
+scripts/checksums.mjs
+  s_b0d29bfbf7e1bf::t_87e336a1663056 1-15
+electron/registry.mjs
+  s_b0d29bfbf7e1bf::t_f0e113ba1e8263 1-39
+openspec/changes/add-environment-inventory/verification.md
+  s_b0d29bfbf7e1bf::t_7c36227a23bb76 1-4,6-19,21,23,25-32
+  s_b0d29bfbf7e1bf::t_9dc274a7238e2e 5,20,22,24
+electron/inventory.mjs
+  s_b0d29bfbf7e1bf::t_e7ac867a325de6 189-197,203-204
+  s_b0d29bfbf7e1bf::t_7392ca9c374cc8 42-45,229,242,247
+  s_b0d29bfbf7e1bf::t_f0e113ba1e8263 1-41,46-54,56-63,65-118,120-158,160-167,173-177,184-187,200,202,206,210-219,222,224-228,232,234-235,237-241,243-246,248-266
+  s_b0d29bfbf7e1bf::t_e6729e80ac58ff 55,64,119,159,168-172,178-183,188,198-199,201,205,207,209,220-221,223,230-231,233,236
+  s_b0d29bfbf7e1bf::t_5a1fafa0130b74 208
+openspec/changes/add-environment-inventory/design.md
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-27
+src/App.tsx
+  s_b0d29bfbf7e1bf::t_e6729e80ac58ff 172
+  s_b0d29bfbf7e1bf::t_7392ca9c374cc8 66,119
+  s_b0d29bfbf7e1bf::t_2683e77792e07e 1-52,54-65,67-118,120-157,159-171,173-202
+  s_b0d29bfbf7e1bf::t_e7ac867a325de6 53
+  s_b0d29bfbf7e1bf::t_5a1fafa0130b74 158
+openspec/config.yaml
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-7
+scripts/sign-mac.mjs
+  s_b0d29bfbf7e1bf::t_5529dcfb56eb4b 1-5,7-9,12-16,18
+  s_b0d29bfbf7e1bf::t_87e336a1663056 6,17
+  s_b0d29bfbf7e1bf::t_15d3074e34fb68 10-11
+electron/process.mjs
+  s_b0d29bfbf7e1bf::t_5a1fafa0130b74 7-16,18-19,29-31
+  s_b0d29bfbf7e1bf::t_f0e113ba1e8263 1-6,17,20-28,32-59
+openspec/changes/add-environment-inventory/specs/environment-inventory/spec.md
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-37
+index.html
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-11
+openspec/changes/add-environment-inventory/tasks.md
+  s_b0d29bfbf7e1bf::t_7c36227a23bb76 3,6-8,11-13,16-18
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-2,4-5,9-10,14-15
+scripts/scan.mjs
+  s_b0d29bfbf7e1bf::t_223b1375f7940e 1-6
+scripts/verify-desktop.mjs
+  s_b0d29bfbf7e1bf::t_5529dcfb56eb4b 1-35,43-54,60-83,98-113,117-119
+  s_b0d29bfbf7e1bf::t_a6b6e71d9109a3 36-42,55-59,84-97,114-116
+README.md
+  s_b0d29bfbf7e1bf::t_fed07a2a7a3792 1-18,20,25-28,30-35,37-48,52-74,76-104
+  s_b0d29bfbf7e1bf::t_9dc274a7238e2e 19,21-24,29,36,49-51,75
+scripts/verify-dmg.mjs
+  s_b0d29bfbf7e1bf::t_15d3074e34fb68 50
+  s_b0d29bfbf7e1bf::t_146cf59889daed 6-23,40-41,46,48
+  s_b0d29bfbf7e1bf::t_87e336a1663056 1-5,24-39,42-45,47,49,51-56
+package.json
+  s_b0d29bfbf7e1bf::t_5529dcfb56eb4b 17
+  s_b0d29bfbf7e1bf::t_2ea6267282018f 36,44-54,59-61,63-68,70-76
+  s_b0d29bfbf7e1bf::t_7392ca9c374cc8 57
+  s_b0d29bfbf7e1bf::t_e08ca0c7b037e3 1-6,9-16,21-35,37-43,55-56,58,62,69,77-78
+  s_b0d29bfbf7e1bf::t_87e336a1663056 7-8,18-20
+electron/preload.cjs
+  s_b0d29bfbf7e1bf::t_223b1375f7940e 1-21
+scripts/dev.mjs
+  s_b0d29bfbf7e1bf::t_223b1375f7940e 1-12
+openspec/changes/add-macos-dmg-release/specs/macos-release/spec.md
+  s_b0d29bfbf7e1bf::t_9dc274a7238e2e 1-22
+package-lock.json
+  s_b0d29bfbf7e1bf::t_23347fbded715a 1-5808
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b72d1f8a922076945e24ed330692bab0c9d38ca8",
+  "prompts": {},
+  "sessions": {
+    "s_b0d29bfbf7e1bf": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a16284-9708-7d41-ac48-5d2f8f8d05c1",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "yupeng.li <yupeng.li@ly.com>"
+    }
+  }
+}
