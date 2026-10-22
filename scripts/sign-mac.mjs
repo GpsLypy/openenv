@@ -1,0 +1,18 @@
+import { execFileSync } from 'node:child_process';
+import fs from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { updateChecksums } from './checksums.mjs';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const { version } = JSON.parse(await fs.readFile(path.join(root, 'package.json'), 'utf8'));
+const app = path.join(root, 'release/mac-arm64/OpenEnv.app');
+const architecture = execFileSync('/usr/bin/file', [path.join(app,'Contents/MacOS/OpenEnv')], { encoding:'utf8' });
+if (!architecture.includes('arm64')) throw new Error('Expected an arm64 Electron distribution for this package.');
+execFileSync('/usr/bin/codesign', ['--force', '--deep', '--sign', '-', app], { stdio: 'inherit' });
+execFileSync('/usr/bin/codesign', ['--verify', '--deep', '--strict', app], { stdio: 'inherit' });
+const zip = path.join(root, `release/OpenEnv-${version}-mac-arm64.zip`);
+execFileSync('/usr/bin/ditto', ['-c', '-k', '--sequesterRsrc', '--keepParent', app, zip], { stdio: 'inherit' });
+const checksum = createHash('sha256').update(await fs.readFile(zip)).digest('hex');
+await updateChecksums(root, version);
+console.log(`Local macOS app: ${app}\nZIP: ${zip}\nSHA-256: ${checksum}\nAd-hoc signed; not notarized.`);

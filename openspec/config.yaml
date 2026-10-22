@@ -1,0 +1,7 @@
+schema: spec-driven
+context: |
+  OpenEnv is a local-first desktop environment inventory for macOS, Windows and Linux.
+  macOS Apple Silicon is the first verified platform. Electron + React + Node.
+  All displayed environment data must come from a real bounded scan, never demo fixtures.
+  Preserve a focused navy/blue developer console aesthetic with a quiet hierarchy.
+  Inventory is read-only; do not install tools or rewrite shell configuration.

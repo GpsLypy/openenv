@@ -1,0 +1,78 @@
+{
+  "name": "openenv",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A clear, local inventory of your development environment.",
+  "author": "OpenEnv",
+  "repository": { "type": "git", "url": "https://github.com/GpsLypy/openenv.git" },
+  "homepage": "https://github.com/GpsLypy/openenv",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "electron .",
+    "test": "node --test tests/*.test.mjs",
+    "scan": "node scripts/scan.mjs",
+    "test:desktop": "node scripts/verify-desktop.mjs",
+    "package:mac": "npm run build && node scripts/icons.mjs && electron-builder --mac dir --arm64 -c.electronDist=node_modules/electron/dist && node scripts/sign-mac.mjs && node scripts/dmg-mac.mjs",
+    "package:dmg": "node scripts/dmg-mac.mjs",
+    "verify:dmg": "node scripts/verify-dmg.mjs",
+    "package:win": "npm run build && electron-builder --win --x64",
+    "package:linux": "npm run build && electron-builder --linux --x64"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12",
+    "playwright": "^1.64.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5"
+  },
+  "build": {
+    "appId": "dev.openenv.desktop",
+    "productName": "OpenEnv",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "assets"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "assets/tray*.png",
+      "assets/icon.png",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "assets/icon.icns",
+      "identity": null,
+      "target": [
+        "dir"
+      ],
+      "minimumSystemVersion": "12.0"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Development",
+      "icon": "assets/icon.png"
+    }
+  }
+}
